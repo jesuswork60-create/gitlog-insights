@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitlog-insights"
+version = "0.1.0"
+description = "Turn git log output into churn, ownership, hotspot and co-change reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "jesuswork60-create" }]
+dependencies = []
+
+[project.scripts]
+gitlog-insights = "gitlog_insights.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
